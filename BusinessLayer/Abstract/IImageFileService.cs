@@ -5,10 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLayer.Abstract
+namespace BusinessLayer.Abstract
 {
-    public interface IHeadingDal : IRepository<Heading>
+    public interface IImageFileService
     {
+        List<ImageFile> ImageFileGetList();
 
+        void ImageFileAdd(ImageFile p);
     }
 }

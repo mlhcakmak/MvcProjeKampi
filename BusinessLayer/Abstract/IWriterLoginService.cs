@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLayer.Abstract
+namespace BusinessLayer.Abstract
 {
-    public interface IHeadingDal : IRepository<Heading>
+    public interface IWriterLoginService
     {
-
+        Writer GetWriter(string username, string password);
     }
 }

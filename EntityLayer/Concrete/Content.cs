@@ -11,13 +11,24 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int ContentID { get; set; }
+
         [StringLength(1000)]
         public string ContentValue { get; set; }
-        public DateTime ContentDate { get; set; }
+
+        public int? WriterID { get; set; }
+        public virtual Writer Writer { get; set; }
+
         public int HeadingID { get; set; }
         public virtual Heading Heading { get; set; }
-        public int? WriterID { get; set; }
-        //? ile nullable type olur. 
-        public virtual Writer Writer { get; set; }
+
+        public int ContentCreatedID { get; set; }
+
+        public DateTime ContentCreatedDate { get; set; }
+
+        public bool ContentisActive { get; set; }
+
+        public int? ContentUpdatedID { get; set; }
+
+        public DateTime? ContentUpdatedDate { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿using DataAccessLayer.Concrete.Repositories;
+﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
+using DataAccessLayer.Concrete.Repositories;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,23 +10,38 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class CategoryManager
+    public class CategoryManager : ICategoryService
     {
-        GenericRepository<Category> repo = new GenericRepository<Category>();
-        public List<Category> GetAllBL()
+        ICategoryDal _categoryDal;
+
+        public CategoryManager(ICategoryDal categoryDal)
         {
-            return repo.List();
+            _categoryDal = categoryDal;
         }
-        public void CategoryAddBL(Category p)
+
+        public void CategoryAdd(Category p)
         {
-            if (p.CategoryName == " " || p.CategoryName.Length <= 3 || p.CategoryDescription == " " || p.CategoryStatus == false || p.CategoryName.Length >= 51)
-            {
-                //hata mesajı
-            }
-            else
-            {
-                repo.Insert(p);
-            }
+            _categoryDal.Insert(p);
+        }
+
+        public void CategoryDelete(Category p)
+        {
+            _categoryDal.Delete(p);
+        }
+
+        public Category CategoryGetByID(int id)
+        {
+            return _categoryDal.Get(x => x.CategoryID == id && x.CategoryisActive == true);
+        }
+
+        public List<Category> CategoryGetList()
+        {
+            return _categoryDal.List(x => x.CategoryisActive == true);
+        }
+
+        public void CategoryUpdate(Category p)
+        {
+            _categoryDal.Update(p);
         }
     }
 }
