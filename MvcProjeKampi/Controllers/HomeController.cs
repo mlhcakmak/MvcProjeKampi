@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BusinessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,25 +8,34 @@ using System.Web.Mvc;
 
 namespace MvcProjeKampi.Controllers
 {
+
+    [AllowAnonymous]
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        ImageFileManager imm = new ImageFileManager(new EFImageFileDAL());
+        HeadingManager hem = new HeadingManager(new EFHeadingDAL());
+        ContentManager com = new ContentManager(new EFContentDAL());
+        WriterManager wrm = new WriterManager(new EFWriterDAL());
+        MessageManager mem = new MessageManager(new EFMessageDAL());
+
+        /// <summary>
+        /// Url'deki ilk link
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult HomePage()
         {
-            return View();
-        }
+            var imageValues = imm.ImageFileGetList();
+            var headingValues = hem.HeadingGetList();
+            var contentValues = com.ContentGetList("");
+            var writerValues = wrm.WriterGetList();
+            var messageValues = mem.MessageGetList();
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.headingValues = (headingValues).Count;
+            ViewBag.contentValues = (contentValues).Count;
+            ViewBag.writerValues = (writerValues).Count;
+            ViewBag.messageValues = (messageValues).Count;
 
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return View(imageValues);
         }
     }
 }
