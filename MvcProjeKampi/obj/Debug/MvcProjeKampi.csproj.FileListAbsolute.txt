@@ -89,3 +89,13 @@ C:\Users\melih\source\repos\MvcProjeKampi\MvcProjeKampi\bin\DataAccessLayer.dll.
 C:\Users\melih\source\repos\MvcProjeKampi\MvcProjeKampi\bin\EntityLayer.pdb
 C:\Users\melih\source\repos\MvcProjeKampi\MvcProjeKampi\bin\EntityFramework.xml
 C:\Users\melih\source\repos\MvcProjeKampi\MvcProjeKampi\bin\EntityFramework.SqlServer.xml
+C:\Users\melih\source\repos\MvcProjeKampi\MvcProjeKampi\bin\FluentValidation.dll
+C:\Users\melih\source\repos\MvcProjeKampi\MvcProjeKampi\bin\PagedList.dll
+C:\Users\melih\source\repos\MvcProjeKampi\MvcProjeKampi\bin\PagedList.Mvc.dll
+C:\Users\melih\source\repos\MvcProjeKampi\MvcProjeKampi\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\melih\source\repos\MvcProjeKampi\MvcProjeKampi\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\melih\source\repos\MvcProjeKampi\MvcProjeKampi\bin\FluentValidation.xml
+C:\Users\melih\source\repos\MvcProjeKampi\MvcProjeKampi\bin\PagedList.xml
+C:\Users\melih\source\repos\MvcProjeKampi\MvcProjeKampi\bin\PagedList.Mvc.xml
+C:\Users\melih\source\repos\MvcProjeKampi\MvcProjeKampi\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\melih\source\repos\MvcProjeKampi\MvcProjeKampi\bin\System.Threading.Tasks.Extensions.xml

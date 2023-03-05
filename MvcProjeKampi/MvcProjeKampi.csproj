@@ -2574,10 +2574,11 @@
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Shared\_WriterLayout.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\About\AboutPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\About\" />
     <Folder Include="Views\AdminCategory\" />
     <Folder Include="Views\Authorization\" />
     <Folder Include="Views\Chart\" />

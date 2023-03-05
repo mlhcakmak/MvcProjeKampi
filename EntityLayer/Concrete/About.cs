@@ -24,15 +24,13 @@ namespace EntityLayer.Concrete
         [StringLength(100)]
         public string AboutImage2 { get; set; }
 
-        public int AboutCreatedID { get; set; }
+      
 
-        public DateTime AboutCreatedDate { get; set; }
 
-        public bool AboutisActive { get; set; }
 
-        public int? AboutUpdatedID { get; set; }
+        
 
-        public DateTime? AboutUpdatedDate { get; set; }
+        
 
     }
 }

@@ -29,12 +29,12 @@ namespace BusinessLayer.Concrete
 
         public About AboutGetById(int id)
         {
-            return _aboutDal.Get(x => x.AboutID == id && x.AboutisActive == true);
+            return _aboutDal.Get(x => x.AboutID == id);
         }
 
         public List<About> AboutGetList()
         {
-            return _aboutDal.List(x => x.AboutisActive == true);
+            return _aboutDal.List();
         }
 
         public void AboutUpdate(About p)
