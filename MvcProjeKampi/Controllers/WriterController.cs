@@ -14,6 +14,7 @@ using static System.Net.WebRequestMethods;
 
 namespace MVCProjeKampi.Controllers
 {
+    [Authorize]
     public class WriterController : Controller
     {
         WriterManager wm = new WriterManager(new EFWriterDAL());

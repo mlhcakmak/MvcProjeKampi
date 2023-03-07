@@ -14,3 +14,4 @@ C:\Users\melih\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLa
 C:\Users\melih\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 C:\Users\melih\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig1.resources
 C:\Users\melih\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
+C:\Users\melih\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig2.resources

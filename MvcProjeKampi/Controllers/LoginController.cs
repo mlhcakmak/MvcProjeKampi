@@ -12,6 +12,7 @@ using System.Web.Security;
 
 namespace MvcProjeKampi.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
         WriterLoginManager wlm = new WriterLoginManager(new EFWriterDAL());
@@ -57,7 +58,6 @@ namespace MvcProjeKampi.Controllers
         }
         // Yazar Giriş İşlemi
         [HttpPost]
-        [AllowAnonymous]
         public ActionResult WriterLogin(Writer p)
         {
             var writeruserinfo = wlm.GetWriter(p.WriterMail, p.WriterPassword);
