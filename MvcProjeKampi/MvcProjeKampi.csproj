@@ -2624,10 +2624,10 @@
     <Content Include="Views\WriterPanelMessage\MessageAdd.cshtml" />
     <Content Include="Views\WriterPanelMessage\MessageListMenu.cshtml" />
     <Content Include="Views\WriterPanelMessage\SendBox.cshtml" />
+    <Content Include="Views\Home\HomePage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
