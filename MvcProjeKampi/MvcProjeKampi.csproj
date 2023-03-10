@@ -2028,6 +2028,7 @@
     <Content Include="AdminLTE-3.0.4\web\images\serve.jpg" />
     <Content Include="AdminLTE-3.0.4\web\images\stats.jpg" />
     <Content Include="AdminLTE-3.0.4\web\images\testimonials.jpg" />
+    <Content Include="AdminLTE-3.0.4\web\images\user.png" />
     <Content Include="AdminLTE-3.0.4\web\index.html" />
     <Content Include="AdminLTE-3.0.4\web\js\aos.js" />
     <Content Include="AdminLTE-3.0.4\web\js\bootstrap.js" />
@@ -2051,6 +2052,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Index.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="AdminLTE-3.0.4\.babelrc" />

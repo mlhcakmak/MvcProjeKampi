@@ -14,6 +14,7 @@ namespace MvcProjeKampi.Controllers
     {
         ContentManager cm = new ContentManager(new EFContentDAL());
         AdminManager adm = new AdminManager(new EFAdminDAL());
+       
 
         /// <summary>
         /// Tüm içerikleri getirir
@@ -23,7 +24,11 @@ namespace MvcProjeKampi.Controllers
         public ActionResult Index(string p = "")
         {
             var contentValues = cm.ContentGetList(p);
-            return View(contentValues);
+            if (!string.IsNullOrEmpty(p))
+            {
+                return View(contentValues);
+            }
+            return View(cm.ContentGetList(""));
         }
 
         /// <summary>
@@ -112,7 +117,6 @@ namespace MvcProjeKampi.Controllers
             var adminValue = adm.AdminGetByMail(mail);
 
             contentValue.ContentUpdatedDate = DateTime.Now;
-            contentValue.ContentUpdatedID = adminValue.AdminID;
             contentValue.ContentisActive = false;
 
             cm.ContentUpdate(contentValue);
